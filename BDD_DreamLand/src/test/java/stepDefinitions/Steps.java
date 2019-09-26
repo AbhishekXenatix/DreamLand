@@ -35,6 +35,7 @@ public class Steps {
 	@When("^choose to buy the first item$")
 	public void choose_to_buy_the_first_item(){
 		driver.findElement(By.xpath("//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtFirstName']")).sendKeys("bhi");
+		driver.findElement(By.xpath("//ul[@class='header-links-account']//a[@class='ico-login'][contains(text(),'Log in')]")).click();
 	 
 	}
 
