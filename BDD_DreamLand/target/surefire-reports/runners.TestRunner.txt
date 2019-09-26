@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: runners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.852 s - in runners.TestRunner
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 26.54 s <<< FAILURE! - in runners.TestRunner
+And moves to checkout from cart(Scenario: Cutomer place an order)  Time elapsed: 0.018 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using xpath=//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtLastName']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-8FSIAPHR', ip: '10.129.29.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: driver.version: RemoteWebDriver
+
+Scenario: Cutomer place an order  Time elapsed: 0.023 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using xpath=//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtLastName']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-8FSIAPHR', ip: '10.129.29.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: driver.version: RemoteWebDriver
+

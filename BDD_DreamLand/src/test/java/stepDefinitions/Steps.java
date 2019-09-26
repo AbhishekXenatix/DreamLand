@@ -7,10 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.*;
-import pageObject.Cartpage;
-import pageObject.Checkoutpage;
-import pageObject.Homepage;
-import pageObject.ProductListpage;
+
 
 public class Steps {
 	WebDriver driver;
@@ -29,13 +26,15 @@ public class Steps {
 
 	@When("^he search the books$")
 	public void he_search_the_books() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//ul[@class='header-links-account']//a[@class='ico-register'][contains(text(),'Register')]")).click();
 	}
 
 	@When("^choose to buy the first item$")
 	public void choose_to_buy_the_first_item(){
-		driver.findElement(By.xpath("//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtFirstName']")).sendKeys("bhi");
-		driver.findElement(By.xpath("//ul[@class='header-links-account']//a[@class='ico-login'][contains(text(),'Log in')]")).click();
+		
+		driver.findElement(By.xpath("//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtFirstName']")).sendKeys("abhi");
+		
 	 
 	}
 
@@ -43,17 +42,21 @@ public class Steps {
 	public void moves_to_checkout_from_cart(){
 		driver.findElement(By.xpath("//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtLastName']")).sendKeys("shek");
 		
+		
 	}
 
 	@When("^select payment method$")
 	public void select_payment_method() {
+		
 		driver.findElement(By.xpath("//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_Email']")).sendKeys("abhi@gmail.com");
 	 
 	}
 
 	@When("^place the order$")
 	public void place_the_order() {
+		
 		driver.findElement(By.xpath("//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_UserName']")).clear();
+		driver.findElement(By.xpath("//ul[@class='header-links-account']//a[@class='ico-login'][contains(text(),'Log in')]")).click();
 	 
 	}
 
