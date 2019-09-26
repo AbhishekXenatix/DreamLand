@@ -1,0 +1,4 @@
+pageObject\Checkoutpage.class
+pageObject\Cartpage.class
+pageObject\Homepage.class
+pageObject\ProductListpage.class
